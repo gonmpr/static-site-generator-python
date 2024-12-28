@@ -1,11 +1,13 @@
 from textnode import TextType, TextNode
-
+from htmlnode import HTMLNode, LeafNode
 def main():
-    test_node = TextNode("this is text bold","bold")
-    test_node2 = TextNode("this text bold","bold")
 
-
-    print(test_node == test_node2)
+    leaf = LeafNode("a", "Click me!",props= {"href": "https://www.google.com"})
+    leaf2 = LeafNode("p", "This is a paragraph of text.")
+    leaf3 = LeafNode(value = "Hello World!")
+    print(leaf.to_html())
+    print(leaf2.to_html())
+    print(leaf3.to_html())
 
 
 
