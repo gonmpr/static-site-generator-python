@@ -1,3 +1,8 @@
+'''
+This a intermediate representation of the text in the
+markdown -> HTML conversion
+'''
+
 from enum import Enum
 
 class TextType(Enum):
