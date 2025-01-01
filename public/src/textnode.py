@@ -1,5 +1,5 @@
 '''
-This a intermediate representation of the text in the
+This is a intermediate representation of the text in the
 markdown -> HTML conversion
 '''
 

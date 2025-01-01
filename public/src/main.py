@@ -1,31 +1,15 @@
 from textnode import TextType, TextNode
 from htmlnode import HTMLNode, LeafNode, ParentNode
+from conversions import *
+
 def main():
 
-    leaf = LeafNode("a", "Click me!",props= {"href": "https://www.google.com"})
-    leaf2 = LeafNode("p", "This is a paragraph of text.")
-    leaf3 = LeafNode(value = "Hello World!")
+    text_node = LeafNode('b', 'ayayaya', props={'url':'home/gonmpr'})
 
-    node = ParentNode(
-    "p",
-    [
-        LeafNode("b", "Bold text"),
-        LeafNode(None, "Normal text"),
-        LeafNode("i", "italic text"),
-        LeafNode(None, "Normal text"),
-    ],
-)
 
-    node2 = ParentNode(
-    "i",
-    [
-        LeafNode("b", "LALALALA"),
-        LeafNode(None, "LALALA"),
-        node
-    ],
-)
+    print(text_node.to_html())
 
-    print(node2.to_html())
+
 
 
 
