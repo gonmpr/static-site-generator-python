@@ -1,6 +1,7 @@
 '''
 This is a intermediate representation of the text in the
 markdown -> HTML conversion
+for the inline elements
 '''
 
 from enum import Enum
